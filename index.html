@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 my-5 mx-auto">
+          <div class="card ">
+            <div class="card-header">
+              <h2 class="text-center bg-danger text-white">Show&Hide-Password</h2>
+            </div>
+            <div class="card-body">
+              <form action="">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Enter Password" id="variety"/>
+                  <button class="btn btn-success ms-2 me-2" type="button" onclick="show1()">Show</button>
+                  <button class="btn btn-dark me-2" type="button" onclick="hide1()">Hide</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script> 
+        let  variety = document.querySelector("#variety")
+
+        function show1(){
+            variety.setAttribute("type","text")
+        }
+        function hide1(){
+            variety.setAttribute("type","password")
+        }
+    </script>
+  </body>
+</html>
